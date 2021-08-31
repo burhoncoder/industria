@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-feature-settings: 'lnum' 1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+img {
+  display: block;
+}
+
+input {
+  font-size: 16px;
+  outline: none;
+  border: none;
+  background-color: inherit;
+  min-width: 0;
+}
+
+li {
+  list-style: none;
+}
+
+span {
+  display: inline-block;
+}
+svg {
+  cursor: pointer;
+}
+
+textarea {
+  outline: none;
+  resize: none;
+}

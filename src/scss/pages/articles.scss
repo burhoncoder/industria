@@ -1,0 +1,9 @@
+.articles-all {
+  position: relative;
+}
+.articles-all .bg-blue {
+  height: 250px;
+}
+.articles-all .articles__column--after::after {
+  z-index: -10;
+}

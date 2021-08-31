@@ -1,0 +1,126 @@
+.article {
+  position: relative;
+  &-content {
+    margin: auto;
+    width: 70%;
+    max-width: 700px;
+  }
+  &-content span {
+    display: block;
+    font-family: 'Helvetica Neue';
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #80a8f7;
+    opacity: 0.8;
+    margin-bottom: 8px;
+  }
+  &-content h1 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+  &-content > img {
+    width: 100%;
+    object-fit: cover;
+    margin: -5px 0 25px 0;
+  }
+  &-content p {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  &-content iframe {
+    width: 100%;
+    margin-bottom: 25px;
+    object-fit: cover;
+  }
+  &-content > p + div {
+    margin: -5px 0 25px 0;
+    background: #f6f6f6;
+    border-left: 3px solid #0c2f75;
+    padding: 15px 25px;
+  }
+  &-content > p + div span {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #0c2f75;
+    margin-bottom: 5px;
+  }
+  &-content > p + div q {
+    quotes: none;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  &-content > div + p,
+  &-content > div + p ~ p {
+    font-style: italic;
+  }
+  &-content blockquote {
+    margin: 40px 0 60px 0;
+    font: italic 500 2.4rem 'Lora', serif;
+    line-height: 36px;
+    overflow: hidden;
+  }
+  .quotation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .quotation img {
+    width: 80px;
+    height: 50px;
+    padding: 0 10px;
+    object-fit: cover;
+  }
+  .quotation div {
+    height: 2px;
+    background: #000000;
+    opacity: 0.5;
+  }
+  .quotation div:first-of-type {
+    flex-grow: 1;
+  }
+  .quotation div:last-of-type {
+    flex-grow: 2.5;
+  }
+}
+.article-share {
+  &__title {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  &__social {
+    display: flex;
+  }
+  &__social svg:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+.add-posts {
+  margin-bottom: 80px;
+  &-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -20px;
+  }
+  &__wrapper {
+    width: 33.3333%;
+    padding: 20px;
+  }
+  .add-posts__img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .add-posts__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

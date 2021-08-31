@@ -1,0 +1,19 @@
+// HELPERS
+@import '../helpers/fonts';
+@import '../helpers/variables';
+@import '../helpers/universals';
+
+// COMPONENTS
+@import '../components/header';
+@import '../components/footer';
+@import '../components/burger-menu.scss';
+
+body {
+  font-family: 'Merriweather', serif;
+  color: #000;
+}
+// PAGES
+@import '../pages/home';
+@import '../pages/article-inside';
+@import '../pages/articles';
+@import '../pages/contacts';

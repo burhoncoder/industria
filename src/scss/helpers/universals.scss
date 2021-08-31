@@ -1,0 +1,143 @@
+.read-btn {
+  padding: 10px 20px;
+  border: 1px solid #0c2f75;
+  display: flex;
+  align-items: center;
+  transition: 0.4s linear;
+  span {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 800;
+    font-size: 1.6rem;
+    color: #0c2f75;
+  }
+  svg {
+    fill: #0c2f75;
+    margin-left: 6px;
+  }
+}
+.load-btn {
+  display: block;
+  padding: 15px 30px 15px 55px;
+  margin: 30px auto 0 auto;
+  background: #0c2f75 url('../../images/plus.png') no-repeat 35px center;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 800;
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+.section-padding {
+  padding: 60px 0;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+}
+.section-title--white {
+  color: #fff;
+}
+.to-top {
+  display: block;
+  position: fixed;
+  z-index: 10;
+  bottom: 3%;
+  right: 2%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #0c2f75 url('../../images/arrowT.svg') no-repeat center;
+}
+.bg-blue {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -5;
+  width: 100%;
+  height: 450px;
+  background-color: #05173a;
+}
+
+.articles {
+  background: #eeeeee;
+  &-grid {
+    display: grid;
+    grid: auto / repeat(3, 1fr);
+    gap: 40px;
+  }
+  &__column {
+    position: relative;
+  }
+  &__column--after::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 1px;
+    height: 100%;
+    background-color: #d9d9d9;
+  }
+  &__item {
+    cursor: pointer;
+    overflow: hidden;
+  }
+  &__item:not(:last-child) {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 10px;
+  }
+  &__item:hover .title {
+    color: #0c2f75;
+  }
+  &__item:hover .read-btn {
+    background-color: #0c2f75;
+  }
+  &__item:hover .read-btn span {
+    color: #fff;
+  }
+  &__item:hover &__img img {
+    transform: scale(1.1);
+  }
+  &__item:hover .read-btn svg {
+    fill: #fff;
+  }
+  &__img {
+    overflow: hidden;
+    margin-bottom: 15px;
+  }
+  &__img img {
+    width: 100%;
+
+    transition: 0.4s ease-in-out;
+  }
+}
+.field {
+  font-family: 'Helvetica Neue';
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #0c2f75;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+.title {
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+  transition: 0.4s linear;
+  cursor: pointer;
+}
+.time {
+  display: block;
+  font-family: 'Helvetica Neue';
+  font-weight: 400;
+  font-size: 1.4rem;
+  opacity: 0.5;
+  margin-bottom: 15px;
+}
+.subtitle {
+  font-family: 'Helvetica Neue';
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #000000;
+  line-height: 22px;
+  margin-bottom: 28px;
+}
